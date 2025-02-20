@@ -32,6 +32,10 @@
   ],
   "customizations": {
     "vscode": {
+      "settings": {
+        "angular.languageServer.trace": "messages",
+        "angular.languageServer.useProjectNgConfig": true        
+      },      
       "extensions": [
         "Angular.ng-template",
         "ZainChen.json",
