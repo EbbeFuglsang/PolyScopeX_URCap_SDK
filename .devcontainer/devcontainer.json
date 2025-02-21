@@ -19,6 +19,7 @@
   "postCreateCommand": {
     "prepareUrsim": "sudo rm -f run-simulator && ln -s /ursim-polyscopex-0.12.159/run-simulator ${containerWorkspaceFolder}",
     "prepareSdk": "sudo rsync -ac --info=progress2 --exclude=install.sh --exclude=readme.txt /sdk-polyscopex-5.4.52/ ${containerWorkspaceFolder}",
+    "prepareAngular": "npm install -g typescript@5.5.4",
   },
   "postStartCommand": "sudo chmod 666 /var/run/docker.sock",
   "containerEnv": {
