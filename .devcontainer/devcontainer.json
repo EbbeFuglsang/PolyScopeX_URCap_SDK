@@ -34,8 +34,10 @@
     "vscode": {
       "settings": {
         "angular.languageServer.trace": "messages",
-        "angular.languageServer.useProjectNgConfig": true        
-      },      
+        "angular.languageServer.useBundled": true,
+        "angular.forceStrictTemplates": true,
+        "angular.languageServer.useProjectNgConfig": true
+      },
       "extensions": [
         "Angular.ng-template",
         "ZainChen.json",
