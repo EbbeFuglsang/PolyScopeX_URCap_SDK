@@ -37,7 +37,6 @@
         "angular.languageServer.trace": "messages",
         "angular.languageServer.useBundled": true,
         "angular.forceStrictTemplates": true,
-        "angular.languageServer.useProjectNgConfig": true
       },
       "extensions": [
         "Angular.ng-template",
