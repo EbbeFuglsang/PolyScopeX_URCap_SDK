@@ -49,10 +49,12 @@ RUN set -ex; \
 #   unzip files, chown to dev
 RUN set -ex; \
     unzip '*.zip'; \
-    rm *.zip; \
-    chown -R $USERNAME:$USERNAME /sdk-polyscopex-${SDK_VERSION}/ /ursim-polyscopex-${URSIM_VERSION}/  /usr/local/lib/node_modules/ /usr/local/bin
+    rm *.zip;\
+    mv sdk-polyscopex-${SDK_VERSION} sdk-polyscopex; \
+    mv ursim-polyscopex-${URSIM_VERSION} ursim-polyscopex; \
+    chown -R $USERNAME:$USERNAME /sdk-polyscopex/ /ursim-polyscopex/  /usr/local/lib/node_modules/ /usr/local/bin
 
 USER $USERNAME
 
-RUN cd /ursim-polyscopex-${URSIM_VERSION}; ./install.sh
-RUN cd /sdk-polyscopex-${SDK_VERSION}; ./install.sh
+RUN cd /ursim-polyscopex; ./install.sh
+RUN cd /sdk-polyscopex; ./install.sh
