@@ -1,8 +1,6 @@
 {
   "name": "polyscopex-sdk-devcontainer",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "image": "ebbefuglsang/sdk_sandbox_polyscopex",
   "mounts": [
     "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
   ],
