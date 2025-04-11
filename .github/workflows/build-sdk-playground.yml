@@ -1,4 +1,4 @@
-name: Publish Docker image
+name: Publish SDK Docker image
 
 on: [push, pull_request]
     
