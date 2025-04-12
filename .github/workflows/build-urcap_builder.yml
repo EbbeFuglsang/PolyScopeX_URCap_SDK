@@ -23,7 +23,7 @@ jobs:
 
       - name: Modify dockerfil for slimming
         run: |
-          sed -i -E 's/^[[:space:]]*mv sdk-polyscopex-\$\{SDK_VERSION\} sdk-polyscopex; \\/    rm sdk-polyscopex-${SDK_VERSION} ; \\/' ./.devcontainer/Dockerfile
+          sed -i -E 's/^[[:space:]]*mv sdk-polyscopex-\$\{SDK_VERSION\} sdk-polyscopex; \\/    rm -r sdk-polyscopex-${SDK_VERSION} ; \\/' ./.devcontainer/Dockerfile
           sed -i 's|[[:space:]]*/sdk-polyscopex/||g' ./.devcontainer/Dockerfile
           sed -i '/^RUN cd \/sdk-polyscopex; \.\/install\.sh$/d' ./.devcontainer/Dockerfile
 
